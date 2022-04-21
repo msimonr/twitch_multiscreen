@@ -6,11 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitch MultiScreen</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <iframe src="https://player.twitch.tv/?channel=electricmoonkey&parent=msimonr.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-    <iframe src="https://player.twitch.tv/?channel=knoa16&parent=msimonr.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+    <div class="container">
+        <div class="menu">
+            <input class="canal" id="canal" type="text" placeholder="NOMBRE DEL CANAL">
+            <button class="btn agregar" id="agregar">Agregar</button>
+            <button class="btn removerTodo" id="removerTodo">Remover todos</button>
+            <!-- <button class="btn ocultar" id="ocultar">Ocultar</button> -->
+        </div>
+        <div class="frames" id="streams">
+        </div>
+    </div>
 </body>
+
+<script src="js/index.js"></script>
 
 </html>
